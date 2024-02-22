@@ -44,7 +44,7 @@ const ExcelJS = require('exceljs');
 
  const workbook = new ExcelJS.Workbook();
         const worksheet  = workbook.addWorksheet("Hisobot");
-        worksheet .addRow(['Vagon raqami', 'Chiqqan stansiya', 'Turgan stansiya', "Borayotgan stansiya", "Index"]);
+        worksheet .addRow(['First column title', 'Second column title']);
 
  const rowNumber = 1;
 
@@ -59,13 +59,11 @@ const ExcelJS = require('exceljs');
             cell.fill = fillColor;
         });
 
- worksheet .addRow([station.vagon_number, station.first_station.station_name_ru, station.current_station.station_name_ru, station.last_station.station_name_ru, station.index,]);
-const filePath = './download/nodenReports.xlsx';
+ worksheet .addRow(["First column value", "Second column value"]);
+const filePath = 'fileName.xlsx';
         workbook.xlsx.writeFile(filePath)
             .then(()=> {
                 console.log('Excel file created successfully.');
-                let file_path =  new InputFile(filePath)
-                ctx.replyWithDocument(file_path)
             })
             .catch(function(error) {
                 console.error('Error:', error);
