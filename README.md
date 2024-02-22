@@ -15,7 +15,7 @@ My best used libraries and usage guides
 
 > Excel file reader in Nodejs
 
-`npm i xlsx ` [more](https://sheetjs.com/)
+`npm i xlsx ` [more](https://www.npmjs.com/package/xlsx)
 
 ```javascript
 const xlsx_reader = require('xlsx');
