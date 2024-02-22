@@ -33,7 +33,7 @@ console.log(workbook_response);
 ```
 
 
-#  [ExcelJS](https://sheetjs.com/)
+#  [ExcelJS](https://github.com/exceljs/exceljs#readme)
 
 > Excel file reader in Nodejs
 
