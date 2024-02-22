@@ -20,7 +20,7 @@ My best used libraries and usage guides
 ```javascript
 const xlsx_reader = require('xlsx');
 
-const path ="file path....";
+const path ="paht of file....";
 
 const workbook = xlsx_reader.readFile(path);
     let workbook_sheet = workbook.SheetNames;
@@ -35,7 +35,7 @@ console.log(workbook_response);
 
 #  2.[ExcelJS](https://github.com/exceljs/exceljs#readme)
 
-> Excel file reader in Nodejs
+> Excel file creator in Nodejs
 
 `npm i exceljs ` [more](https://www.npmjs.com/package/exceljs)
 
