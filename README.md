@@ -13,7 +13,7 @@ My best used libraries and usage guides
 
 #  [SheetJS](https://sheetjs.com/)
 
-> The SheetJS Community Edition offers battle-tested open-source solutions for extracting useful data from almost any complex spreadsheet and generating new spreadsheets that will work with legacy and modern software alike.
+> Excel file reader in Nodejs
 
 `npm i xlsx `
 
