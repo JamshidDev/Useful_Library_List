@@ -33,7 +33,7 @@ console.log(workbook_response);
 ```
 
 
-#  3.[ExcelJS](https://github.com/exceljs/exceljs#readme)
+#  2.[ExcelJS](https://github.com/exceljs/exceljs#readme)
 
 > Excel file reader in Nodejs
 
@@ -46,20 +46,11 @@ const ExcelJS = require('exceljs');
         const worksheet  = workbook.addWorksheet("Hisobot");
         worksheet .addRow(['First column title', 'Second column title']);
 
- const rowNumber = 1;
 
-        // Fill color you want to set
-        const fillColor = {
-            type: 'pattern',
-            pattern: 'solid',
-            fgColor: { argb: '85b2f9' } // Red background color
-        };
-
- worksheet.getRow(rowNumber).eachCell({ includeEmpty: true }, cell => {
-            cell.fill = fillColor;
-        });
 
  worksheet .addRow(["First column value", "Second column value"]);
+
+
 const filePath = 'fileName.xlsx';
         workbook.xlsx.writeFile(filePath)
             .then(()=> {
