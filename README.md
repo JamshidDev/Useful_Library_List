@@ -62,3 +62,33 @@ const filePath = 'fileName.xlsx';
             });
 
 ```
+
+
+#  2.[docxtemplater](https://github.com/open-xml-templating/docxtemplater#readme)
+
+> Excel file creator in Nodejs
+
+`npm i docxtemplater ` [more](https://www.npmjs.com/package/docxtemplater)
+
+```javascript
+const ExcelJS = require('exceljs');
+
+ const workbook = new ExcelJS.Workbook();
+        const worksheet  = workbook.addWorksheet("Hisobot");
+        worksheet .addRow(['First column title', 'Second column title']);
+
+
+
+ worksheet .addRow(["First column value", "Second column value"]);
+
+
+const filePath = 'fileName.xlsx';
+        workbook.xlsx.writeFile(filePath)
+            .then(()=> {
+                console.log('Excel file created successfully.');
+            })
+            .catch(function(error) {
+                console.error('Error:', error);
+            });
+
+```
