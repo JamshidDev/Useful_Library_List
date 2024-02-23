@@ -66,7 +66,7 @@ const filePath = 'fileName.xlsx';
 
 #  3.[docxtemplater](https://github.com/open-xml-templating/docxtemplater#readme)
 
-> Excel file creator in Nodejs
+> DOCX file creator in Nodejs
 
 `npm install --save docxtemplater pizzip ` [more](https://www.npmjs.com/package/docxtemplater)
 
