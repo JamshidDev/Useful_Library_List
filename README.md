@@ -98,3 +98,41 @@ const path = require("path");
 
         fs.writeFileSync(path.resolve(__dirname, "output.docx"), buf);
 ```
+
+
+#  3.[moment-timezone](https://momentjs.com/timezone/)
+
+> Parse and display dates in any timezone.
+
+`npm i moment-timezone ` [more](https://www.npmjs.com/package/moment-timezone)
+
+```javascript
+const moment = require('moment-timezone');
+
+// Set the timezone
+const timezone = 'America/New_York';
+
+// Get the current time in the specified timezone
+const currentTimeInNY = moment.tz(timezone);
+
+// Display the current time in New York
+console.log('Current time in New York:', currentTimeInNY.format());
+
+// Convert a specific time to New York timezone
+const specificTime = '2024-02-27T12:00:00';
+const specificTimeInNY = moment.tz(specificTime, timezone);
+
+// Display the specific time in New York
+console.log('Specific time in New York:', specificTimeInNY.format());
+
+// Convert a specific time from one timezone to another
+const timeInLosAngeles = '2024-02-27T12:00:00';
+const timeInLA = moment.tz(timeInLosAngeles, 'America/Los_Angeles');
+
+// Convert to New York timezone
+const timeInNY = timeInLA.clone().tz('America/New_York');
+
+// Display the converted time in New York
+console.log('Converted time in New York:', timeInNY.format());
+```
+
